@@ -1,0 +1,13 @@
+<a href="/todos">Lista</a>
+<h1> <%=@todo["name"]%></h1> 
+
+
+<p><%=@todo["description"]%></p>
+
+<label>Klart?</label>
+<%if @todo["completed"] == 1%>
+    <input type="checkbox" checked>
+<%else%>
+    <input type="checkbox">
+<%end%>
+
